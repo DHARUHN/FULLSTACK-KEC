@@ -1,0 +1,44 @@
+h1{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(13, 11, 11);
+    padding-top: -3rem;
+}
+.item
+{
+    color: rgb(8, 6, 6);
+    border: 3px solid rgb(8, 7, 5) ;
+    background-color: rgb(243, 247, 10);
+    padding: 10px;
+}
+.container1
+{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap; 
+    background-color: rgb(24, 190, 255);
+    border:1.5px solid black
+}
+.container2{
+    
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    gap: 10px;
+    background-color: rgb(39, 24, 255);
+    border:1.5px solid #000000
+}
+@media(max-width:400px)
+{
+    .container2
+    {
+        grid-template-columns: repeat(3,1fr);
+    }
+}
+@media(max-width:500px)
+{
+    .container1
+    {
+        grid-template-columns: repeat(3,1fr);
+    }
+}
